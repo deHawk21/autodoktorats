@@ -73,7 +73,7 @@ export default function Home() {
           <div className="container relative z-20 px-4 md:px-6 text-center animate-in fade-in zoom-in duration-700 slide-in-from-bottom-4">
             <div className="inline-flex items-center gap-2 bg-brand-accent/90 px-4 py-1.5 mb-8 rounded-full text-sm font-bold uppercase tracking-widest shadow-lg">
               <Star className="h-4 w-4 fill-white" />
-              <span>Profesionāls auto serviss Rīgā</span>
+              <span>Profesionāls auto serviss Siguldā</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-tight drop-shadow-2xl font-heading">
               Profesionāls auto serviss – <br/>
@@ -119,6 +119,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { 
+                  icon: Award, 
+                  title: "10 gadu pieredze", 
+                  desc: "Uzkrāta pieredze un zināšanas, kas garantē augstāko kvalitāti katram veiktajam darbam." 
+                },
+                { 
                   icon: Activity, 
                   title: "Precīza diagnostika", 
                   desc: "Izmantojam jaunākās paaudzes diagnostikas iekārtas, lai precīzi noteiktu problēmu un izvairītos no liekiem tēriņiem." 
@@ -126,17 +131,12 @@ export default function Home() {
                 { 
                   icon: ShieldCheck, 
                   title: "Godīgas cenas", 
-                  desc: "Nekādu slēpto izmaksu. Visas cenas saskaņojam pirms darbu uzsākšanas. Jūs vienmēr zināsiet, par ko maksājat." 
+                  desc: "Caurspīdīgas cenas bez slēptām izmaksām. Visas tāmes saskaņojam pirms darbu uzsākšanas." 
                 },
                 { 
                   icon: Clock, 
                   title: "Ātrs serviss", 
                   desc: "Sīkākus remontdarbus un apkopes veicam tajā pašā dienā. Cienām Jūsu laiku un mobilitāti." 
-                },
-                { 
-                  icon: Users, 
-                  title: "Ģimenes uzņēmums", 
-                  desc: "Personīga attieksme un atbildība. Mēs esam vietējais uzņēmums, kam rūp katra klienta apmierinātība." 
                 }
               ].map((feature, index) => (
                 <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-gray-50 hover:bg-white group overflow-hidden">
@@ -170,12 +170,12 @@ export default function Home() {
                   Pieredze, kas runā pati par sevi
                 </h2>
                 <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                  Mēs esam nozarē jau vairāk nekā 15 gadus. Mūsu komanda sastāv no sertificētiem meistariem, kuri regulāri papildina zināšanas par jaunākajām auto tehnoloģijām.
+                  Mēs esam nozarē jau 10 gadus. Mūsu komanda sastāv no sertificētiem meistariem, kuri regulāri papildina zināšanas par jaunākajām auto tehnoloģijām.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
                   <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
-                    <div className="text-4xl font-bold text-brand-accent mb-2">15+</div>
+                    <div className="text-4xl font-bold text-brand-accent mb-2">10+</div>
                     <div className="text-sm text-gray-300 uppercase tracking-wide font-bold">Gadi nozarē</div>
                   </div>
                   <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm border border-white/10">
@@ -350,7 +350,7 @@ export default function Home() {
                       <MapPin className="h-6 w-6 mt-1" />
                       <div>
                         <p className="font-bold text-lg">Adrese</p>
-                        <p className="text-white/80">Brīvības gatve 123, Rīga</p>
+                        <p className="text-white/80">Brīvības gatve 123, Sigulda</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -417,6 +417,7 @@ export default function Home() {
                <div className="z-10 text-center bg-white/80 p-6 rounded-xl backdrop-blur-md">
                  <MapPin className="h-10 w-10 text-brand-dark mx-auto mb-2" />
                  <span className="text-xl font-bold text-brand-dark uppercase tracking-wider">Kartes Vietturis</span>
+                 <p className="text-sm text-brand-dark/70 font-bold">Sigulda, Brīvības gatve 123</p>
                </div>
             </div>
 

@@ -1,0 +1,51 @@
+Izveido modernu, vienas lapas mājaslapu auto servisam “Auto Doktorāts”, balstītu uz sešiem obligātajiem konversijas elementiem.
+
+Tehniskās prasības:
+- Izmanto tikai HTML, CSS un minimālu JavaScript (bez ārējām bibliotēkām).
+- Lapa ir pilnībā responsīva (dators, planšete, telefons).
+- Sakārtots, tīrs, mūsdienīgs dizains ar tumši zilu/antracīta paleti un oranžu akcentu.
+- Skaidri nodalītas sekcijas, galvene ar navigāciju un vienmērīga ritināšana (smooth scroll).
+- Koda iekšienē pie katras sekcijas pieliec komentāru, kurš no 6 punktiem tur tiek risināts.
+
+Struktūra balstīta uz 6 galvenajiem elementiem:
+
+1. SEKCIJA: “Kas tiek piedāvāts?”
+   - Hero sekcija ar lielu virsrakstu “Profesionāls auto serviss – ātri, godīgi, precīzi.”
+   - Īss skaidrojums par to, ko Auto Doktorāts piedāvā: eļļas maiņa, bremzes, diagnostika, riepas, tehniskā apkope.
+   - Divas CTA pogas: “Zvanīt tagad” un “Pieteikt vizīti”.
+
+2. SEKCIJA: “Kā šis piedāvājums atšķiras?”
+   - 3–4 izceltās īpašības, piemēram:
+     – “Precīza diagnostika ar profesionālo aprīkojumu”
+     – “Godīgas un caurspīdīgas cenas”
+     – “Darbi bieži tiek veikti tajā pašā dienā”
+     – “Vietējais ģimenes uzņēmums, nevis bezpersonisks serviss”
+   - Skaidrs, vizuāli atdalīts bloks.
+
+3. SEKCIJA: “Kāpēc varu uzticēties?”
+   - Bloks ar pieredzes un reputācijas pierādījumiem:
+     – Gadu skaits nozarē
+     – Sertifikāti vai pieredzes līmenis
+     – Reālistiski, bet izdomāti statistikas pierādījumi: “98% klientu atgriežas atkārtoti”
+   - Pievieno mazu “drošības garantijas” tekstu: piemēram, “Garantija visiem veiktajiem darbiem”.
+
+4. SEKCIJA: “Kā tas strādā?”
+   - Procesa skaidrojums 3–4 soli:
+     1. Pieteikšanās vai zvans
+     2. Diagnostika un izmaksu izskaidrošana
+     3. Remonts vai apkope
+     4. Auto saņemšana ar paskaidrojumu par paveiktajiem darbiem
+   - Katrā solī ikona un īss teikums.
+
+5. SEKCIJA: “Ko saka citi?”
+   - 3 klientu atsauksmes kartiņās (izdomāti vārdi un teksts).
+   - Katrai: vārds, citāts, zvaigžņu vērtējums (★★★★★).
+
+6. SEKCIJA: “Kā varu pieteikties?”
+   - Pievilcīgs CTA piedāvājums, piemēram: “Bezmaksas diagnostika, piesakoties šonedēļ”.
+   - Skaidrs apraksts, kā pieteikties: tālrunis, e-pasts, adrese, darba laiks.
+   - Kontaktforma ar laukiem: Vārds, Telefons, E-pasts, Ziņojums.
+   - Liela CTA poga: “Pieteikt vizīti”.
+   - Bloks ar kartes vietturi (stilizēts taisnstūris ar tekstu “Kartes vietturis”).
+
+Pārliecinies, ka lapa izskatās profesionāli, pārskatāmi un katrs no 6 punktiem ir vizuāli skaidri nodalīts, lai to varētu izmantot pārdošanas prezentācijā.
