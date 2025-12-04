@@ -1,0 +1,51 @@
+Ieliec šo tekstu kā promptu Replitā:
+
+```text
+Izveido vienkāršu, modernu, vienas lapas (single-page) mājaslapu vietējam auto servisa uzņēmumam ar nosaukumu “Auto Doktorāts”.
+
+Prasības:
+- Izmanto TIKAI HTML, CSS un minimālu JavaScript (bez ārējām bibliotēkām, piemēram, React, Bootstrap vai Tailwind).
+- Dizainam jābūt pilnībā responsīvam – ērti skatāmam datorā, planšetē un telefonā.
+
+Izkārtojums:
+1. Fiksēta galvene (sticky header) ar logo tekstu “Auto Doktorāts” un navigācijas saitēm, kas ritina uz sekcijām: Sākums, Pakalpojumi, Par mums, Atsauksmes, Kontakti.
+2. Hero sekcija:
+   - Liels virsraksts: “Uzticams auto serviss Jūsu ikdienai”.
+   - Apakšvirsraksts: “Ātrs, godīgs un profesionāls auto remonts Rīgā.” (vari lietot neitrālu pilsētu, ja nepieciešams).
+   - Divas “call-to-action” pogas: “Zvanīt tagad” un “Pieteikt vizīti”.
+   - Fona attēls vai gradients, kas saistīts ar auto/servisu (var būt neitrāls vietturis).
+
+3. Pakalpojumu sekcija:
+   - 3–6 pakalpojumu kartiņas, piemēram:
+     “Eļļas maiņa”, “Bremžu remonts”, “Dzinēja diagnostika”, “Riepu maiņa un balansēšana”, “Pilna tehniskā apkope”.
+   - Katrai kartītei: ikona (var būt vienkāršs emoji vai vietturis), īss nosaukums un 1–2 teikumu apraksts.
+
+4. “Par mums” sekcija:
+   - Īss apraksts par servisu, piemēram: ģimenes uzņēmums, pieredzējuši meistari, godīgas cenas.
+   - Mazs saraksts “Kāpēc izvēlēties mūs?”, piemēram:
+     – “Ātra apkalpošana vienas dienas laikā”
+     – “Pieredzējuši un sertificēti meistari”
+     – “Caurspīdīgas un saprotamas cenas”
+     – “Garantija veiktajiem darbiem”
+
+5. Atsauksmju sekcija:
+   - 3 klientu atsauksmes kartiņās.
+   - Katrā: vārds, īsa atsauksmes frāze un zvaigžņu vērtējums (var būt 4–5 zvaigznes), izmanto izdomātus vārdus un tekstu.
+
+6. Kontaktsekcija:
+   - Kontaktu dati: tālrunis, e-pasts, darba laiks, adrese (izmanto reālistiskus, bet izdomātus datus).
+   - Vienkārša kontaktforma ar laukiem: Vārds, Telefons, E-pasts, Ziņojums un poga “Sūtīt ziņu”.
+   - Viettura bloks kartei (piemēram, stilizēts taisnstūris ar tekstu “Kartes vietturis”).
+
+Dizains/stils:
+- Tīrs, profesionāls izskats, piemērots mazam vietējam auto servisam.
+- Krāsu palete: tumši zila vai antracīta pelēka kā primārā krāsa, akcenta krāsa – oranža vai dzeltena, daudz brīvas baltas telpas.
+- Izmanto modernu Google fontu virsrakstiem un vienkāršu, viegli lasāmu fontu pamattekstam.
+- Pievieno hover efektus pogām un pakalpojumu kartiņām.
+- Nodrošini konsekventu atstarpi, padding un margin visā lapā.
+
+Cits:
+- Navigācijas saitēm jānodrošina vienmērīga (smooth) ritināšana uz attiecīgajām sekcijām.
+- Izmanto semantiskus HTML elementus (header, main, section, footer u.c.).
+- HTML kodā pievieno komentārus pie galvenajām sekcijām, lai mājaslapa būtu viegli izskaidrojama pārdošanas prezentācijas laikā.
+```
