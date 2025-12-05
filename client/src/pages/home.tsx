@@ -32,13 +32,13 @@ export default function Home() {
       <div className="bg-brand-dark text-white py-2 text-sm hidden md:block">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex gap-6">
-            <a href="tel:+37120000000" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
+            <a href="tel:+37125883638" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
               <Phone className="h-4 w-4" />
-              <span>+371 20 000 000</span>
+              <span>+371 25883638</span>
             </a>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Brīvības gatve 123, Sigulda</span>
+              <span>Kalna iela 2a, Sigulda, LV-2150</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -409,22 +409,31 @@ export default function Home() {
                    <div className="space-y-4 text-lg">
                      <div className="flex items-start gap-4">
                        <MapPin className="text-brand-accent h-6 w-6 mt-1" />
-                       <p>Dārza iela 20c, Sigulda,<br/>Siguldas novads, LV-2150</p>
+                       <p>Kalna iela 2a, Sigulda, LV-2150</p>
                      </div>
                      <div className="flex items-center gap-4">
                        <Phone className="text-brand-accent h-6 w-6" />
-                       <a href="tel:+37129524359" className="hover:text-brand-accent transition-colors">+371 20 000 000</a>
+                       <a href="tel:+37125883638" className="hover:text-brand-accent transition-colors">+371 25883638</a>
                      </div>
                      <div className="flex items-center gap-4">
                        <Mail className="text-brand-accent h-6 w-6" />
-                       <a href="mailto:info@autodoktorats.lv" className="hover:text-brand-accent transition-colors">info@autodoktorats.lv</a>
+                       <a href="mailto:autodoktorats@inbox.lv" className="hover:text-brand-accent transition-colors">autodoktorats@inbox.lv</a>
                      </div>
                    </div>
                  </div>
 
                  <div className="w-full h-[250px] bg-gray-800 rounded-xl overflow-hidden border-4 border-gray-700 grayscale hover:grayscale-0 transition-all">
-                   {/* Map Placeholder */}
-                   <div className="w-full h-full bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/2275px-Google_Maps_Logo_2020.svg.png')] bg-cover bg-center opacity-50"></div>
+                   <iframe 
+                     width="100%" 
+                     height="100%" 
+                     title="Google Maps Location"
+                     frameBorder="0" 
+                     scrolling="no" 
+                     marginHeight={0} 
+                     marginWidth={0} 
+                     src="https://maps.google.com/maps?q=Kalna+iela+2a,+Sigulda,+LV-2150&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                     className="w-full h-full"
+                   ></iframe>
                  </div>
                </div>
              </div>
