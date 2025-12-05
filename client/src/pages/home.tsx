@@ -12,8 +12,10 @@ import { Badge } from "@/components/ui/badge";
 // Assets
 import heroBg from "@assets/generated_images/professional_auto_mechanic_workshop_interior_with_clean_lighting.png"; 
 import mechanicBg from "@assets/generated_images/close_up_of_auto_mechanic_hands_working_on_a_car_engine_with_professional_tools.png";
-import restorationBefore from "@assets/WhatsApp_Image_2025-12-04_at_20.19.11_1764929320034.jpeg";
-import restorationAfter from "@assets/c83c1024-1036-45a0-b320-3d9b4921594c_1764929320030.MP4";
+// Updated assets for restoration
+import restorationBefore1 from "@assets/WhatsApp_Image_2025-12-04_at_20.19.11_1764929640658.jpeg";
+import restorationBefore2 from "@assets/WhatsApp_Image_2025-12-04_at_20.19.07_1764929640658.jpeg";
+import restorationAfterVideo from "@assets/c83c1024-1036-45a0-b320-3d9b4921594c_1764929640655.MP4";
 
 export default function Home() {
   const scrollToSection = (id: string) => {
@@ -166,7 +168,7 @@ export default function Home() {
         {/* Services Section - "Title +" style */}
         <section id="pakalpojumi" className="py-24 bg-white">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               
               <div>
                 <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 uppercase italic">
@@ -226,8 +228,27 @@ export default function Home() {
                         gradient: "from-brand-dark to-blue-900"
                      },
                      {
-                        title: "Auto Atjaunošana +",
-                        content: "Virsbūves remonts un metināšanas darbi. Atgriežam Jūsu auto otro dzīvi, novēršot rūsu un bojājumus. Skatiet mūsu darba piemēru zemāk!",
+                        title: "Auto virsbūves atjaunošana +",
+                        content: (
+                          <div className="space-y-6">
+                            <p>Virsbūves remonts un metināšanas darbi. Atgriežam Jūsu auto otro dzīvi, novēršot rūsu un bojājumus.</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                               <div className="relative group overflow-hidden rounded-lg aspect-video bg-black/10 cursor-pointer" onClick={() => window.open(restorationBefore1, '_blank')}>
+                                  <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded z-10 shadow-sm">Pirms</div>
+                                  <img src={restorationBefore1} alt="Pirms remonta 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                               </div>
+                               <div className="relative group overflow-hidden rounded-lg aspect-video bg-black/10 cursor-pointer" onClick={() => window.open(restorationBefore2, '_blank')}>
+                                  <div className="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded z-10 shadow-sm">Pirms</div>
+                                  <img src={restorationBefore2} alt="Pirms remonta 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                               </div>
+                               <div className="relative group overflow-hidden rounded-lg aspect-video bg-black">
+                                  <div className="absolute top-2 left-2 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded z-10 shadow-sm">Pēc (Video)</div>
+                                  <video src={restorationAfterVideo} className="w-full h-full object-cover" controls />
+                               </div>
+                            </div>
+                          </div>
+                        ),
                         gradient: "from-green-600 to-green-800"
                      }
                    ].map((service, i) => (
@@ -243,83 +264,6 @@ export default function Home() {
                  </Accordion>
               </div>
             </div>
-
-            {/* Before / After Showcase */}
-            <div className="bg-gray-900 rounded-3xl overflow-hidden shadow-2xl">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                 <div className="p-12 lg:p-16 flex flex-col justify-center text-white bg-gradient-to-br from-gray-900 to-gray-800">
-                    <div className="inline-flex items-center gap-2 bg-brand-accent/20 text-brand-accent px-4 py-2 rounded-full font-bold uppercase tracking-widest text-sm w-fit mb-6 border border-brand-accent/30">
-                       <RefreshCw className="h-4 w-4" />
-                       Pirms un Pēc
-                    </div>
-                    <h3 className="text-3xl md:text-5xl font-black mb-6 uppercase italic leading-tight">
-                       Auto virsbūves <br/> <span className="text-brand-accent">Atjaunošana</span>
-                    </h3>
-                    <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                       Vēlaties redzēt reālus rezultātus? Mēs ne tikai solām, bet arī darām. 
-                       Lūk, piemērs, kā mēs atjaunojam stipri korodējušas virsbūves daļas, 
-                       atgriežot tām rūpnīcas izskatu un izturību.
-                    </p>
-                    <div className="flex flex-wrap gap-4">
-                       <div className="bg-black/30 p-4 rounded-xl border border-white/10">
-                          <p className="text-brand-accent font-bold mb-1 text-xl">1.</p>
-                          <p className="text-sm font-medium">Novērtējam bojājumus</p>
-                       </div>
-                       <div className="bg-black/30 p-4 rounded-xl border border-white/10">
-                          <p className="text-brand-accent font-bold mb-1 text-xl">2.</p>
-                          <p className="text-sm font-medium">Izgriežam rūsu</p>
-                       </div>
-                       <div className="bg-black/30 p-4 rounded-xl border border-white/10">
-                          <p className="text-brand-accent font-bold mb-1 text-xl">3.</p>
-                          <p className="text-sm font-medium">Iemetinām jaunu metālu</p>
-                       </div>
-                       <div className="bg-black/30 p-4 rounded-xl border border-white/10">
-                          <p className="text-brand-accent font-bold mb-1 text-xl">4.</p>
-                          <p className="text-sm font-medium">Apstrādājam un krāsojam</p>
-                       </div>
-                    </div>
-                 </div>
-                 
-                 <div className="relative min-h-[500px] bg-black">
-                    {/* Split view or simple stack */}
-                    <div className="absolute inset-0 flex flex-col">
-                       {/* BEFORE */}
-                       <div className="relative flex-1 overflow-hidden group">
-                          <div className="absolute top-4 left-4 z-20 bg-red-600 text-white px-3 py-1 font-bold uppercase text-sm rounded shadow-lg">
-                             Pirms
-                          </div>
-                          <img 
-                             src={restorationBefore} 
-                             alt="Auto restoration before - rust damage" 
-                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-                       </div>
-                       
-                       {/* AFTER (Video) */}
-                       <div className="relative flex-1 overflow-hidden group border-t-4 border-brand-accent">
-                          <div className="absolute top-4 left-4 z-20 bg-green-600 text-white px-3 py-1 font-bold uppercase text-sm rounded shadow-lg">
-                             Pēc
-                          </div>
-                          <video 
-                             src={restorationAfter} 
-                             autoPlay 
-                             muted 
-                             loop 
-                             playsInline
-                             className="w-full h-full object-cover"
-                          />
-                          {/* Overlay indicating it's a video result */}
-                          <div className="absolute bottom-6 right-6 z-20 flex items-center gap-2 bg-black/50 backdrop-blur px-4 py-2 rounded-full border border-white/20">
-                             <div className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></div>
-                             <span className="text-white text-xs font-bold uppercase">Rezultāts video</span>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-            </div>
-
           </div>
         </section>
 
