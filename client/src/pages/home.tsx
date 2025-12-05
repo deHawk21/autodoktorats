@@ -275,7 +275,6 @@ export default function Home() {
                    ))}
                  </Accordion>
               </div>
-            </div>
           </div>
         </section>
 
