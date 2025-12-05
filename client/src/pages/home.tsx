@@ -168,8 +168,9 @@ export default function Home() {
         {/* Services Section - "Title +" style */}
         <section id="pakalpojumi" className="py-24 bg-white">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              
+            
+            {/* Top Section: Info & Summary */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-start">
               <div>
                 <h2 className="text-4xl md:text-5xl font-black text-brand-dark mb-8 uppercase italic">
                   Mūsu <span className="text-brand-accent">Pakalpojumi</span>
@@ -178,13 +179,14 @@ export default function Home() {
                   Lai dzinēji darbotos nevainojami, mēs izmantojam tikai sertificētas rezerves daļas un eļļas. 
                   Nodrošinām pilnu servisa ciklu no diagnostikas līdz sarežģītiem remontiem.
                 </p>
-                
-                <div className="bg-gray-100 p-8 rounded-xl border-l-4 border-brand-accent">
+              </div>
+              
+              <div className="bg-gray-100 p-8 rounded-xl border-l-4 border-brand-accent">
                   <h4 className="font-bold text-xl mb-4 flex items-center gap-2">
                     <Activity className="text-brand-accent" />
                     Mēs piedāvājam:
                   </h4>
-                  <ul className="space-y-3">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {[
                       "Eļļas un filtru maiņa",
                       "Ritošās daļas remonts",
@@ -200,10 +202,11 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                </div>
               </div>
+            </div>
 
-              <div className="space-y-4">
+            {/* Bottom Section: Detailed Accordion (Centered) */}
+            <div className="max-w-4xl mx-auto space-y-4">
                  {/* Accordion style service cards */}
                  <Accordion type="single" collapsible className="w-full space-y-4">
                    {[
