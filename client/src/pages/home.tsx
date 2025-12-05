@@ -238,13 +238,7 @@ export default function Home() {
                             </p>
                             
                             <div className="flex flex-col gap-8">
-                               {/* Result Video (Top) */}
-                               <div className="relative group overflow-hidden rounded-2xl bg-black shadow-2xl border-2 border-gray-900 w-full">
-                                  <div className="absolute top-4 left-4 bg-green-600 text-white text-sm font-bold px-3 py-1.5 rounded z-10 shadow-md animate-pulse">Pēc (Rezultāts)</div>
-                                  <video src={restorationAfterVideo} className="w-full h-auto max-h-[600px] object-contain mx-auto" controls autoPlay loop muted playsInline />
-                               </div>
-
-                               {/* Before Images (Bottom, Horizontal) */}
+                               {/* Before Images (Top, Horizontal) */}
                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                                   <div className="relative group overflow-hidden rounded-2xl aspect-[4/3] bg-black/10 cursor-pointer shadow-lg" onClick={() => window.open(restorationBefore1, '_blank')}>
                                      <div className="absolute top-4 left-4 bg-red-600 text-white text-sm font-bold px-3 py-1.5 rounded z-10 shadow-md">Pirms</div>
@@ -254,6 +248,12 @@ export default function Home() {
                                      <div className="absolute top-4 left-4 bg-red-600 text-white text-sm font-bold px-3 py-1.5 rounded z-10 shadow-md">Pirms</div>
                                      <img src={restorationBefore2} alt="Pirms remonta 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                                   </div>
+                               </div>
+
+                               {/* Result Video (Bottom) */}
+                               <div className="relative group overflow-hidden rounded-2xl bg-black shadow-2xl border-2 border-gray-900 w-full">
+                                  <div className="absolute top-4 left-4 bg-green-600 text-white text-sm font-bold px-3 py-1.5 rounded z-10 shadow-md animate-pulse">Pēc (Rezultāts)</div>
+                                  <video src={restorationAfterVideo} className="w-full h-auto max-h-[600px] object-contain mx-auto" controls autoPlay loop muted playsInline />
                                </div>
                             </div>
                           </div>
