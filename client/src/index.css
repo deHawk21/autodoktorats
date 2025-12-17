@@ -43,7 +43,8 @@
   --brand-dark: 222 47% 11%; /* #0F172A equivalent */
   
   /* Oranžs akcents */
-  --brand-accent: 25 95% 53%; /* #F97316 equivalent */
+  /*--brand-accent: 25 95% 53%; /* #F97316 equivalent */
+  --brand-accent: 0 100% 40%; /* #F97316 equivalent */
 
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;

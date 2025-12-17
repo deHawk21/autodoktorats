@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 // Assets
 import heroBg from "@assets/generated_images/professional_auto_mechanic_workshop_interior_with_clean_lighting.png"; 
 import mechanicBg from "@assets/generated_images/close_up_of_auto_mechanic_hands_working_on_a_car_engine_with_professional_tools.png";
+import logo from "@assets/logo.png";
 // Updated assets for restoration
 import restorationBefore1 from "@assets/WhatsApp_Image_2025-12-04_at_20.19.11_1764929640658.jpeg";
 import restorationBefore2 from "@assets/WhatsApp_Image_2025-12-04_at_20.19.07_1764929640658.jpeg";
@@ -52,8 +53,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur shadow-md border-b border-gray-100">
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
-            <div className="bg-brand-dark p-2 rounded text-white">
-              <Wrench className="h-6 w-6" />
+            <div className="bg-brand-dark p-1 rounded text-white">
+              <img src={logo} alt="Description of the image" className="h-14 w-14" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold uppercase tracking-wider text-brand-dark leading-none">
@@ -338,26 +339,28 @@ export default function Home() {
                    Klienti mūs <span className="text-brand-accent">novērtē</span>
                  </h2>
                </div>
+               <a href="https://www.google.lv/maps/place/Auto+Doktor%C4%81ts,+SIA/@57.1450033,24.8291324,17z/data=!4m8!3m7!1s0x46e94f37733aaec7:0x1f7e20d08a5b435b!8m2!3d57.1443935!4d24.8333782!9m1!1b1!16s%2Fg%2F11kj3vfqy1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-brand-dark uppercase font-bold">
                  Lasīt visas atsauksmes Google
                </Button>
+               </a>
              </div>
 
              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                {[
                  {
-                   text: "Ļoti laipns un atsaucīgs meistars. Jūnija sākumā neizgāju skati, meistars piedāvāja novērst trūkumus. Vienojāmies par datumu, bet tika pat ātrāk.",
-                   name: "Jānis Bērziņš",
+                   text: "Milzīgs paldies servisam par sapratni un cilvēcīgo attieksmi. Izlādējas auto akumulators un neskatoties uz Jāņu svētkiem neatteicās palīdzēt.Lai veicas sevisam! Super attieksme!",
+                   name: "Haralds",
                    car: "Audi A6"
                  },
                  {
-                   text: "Great, fast service with affordable prices! My car broke at 2am near Sigulda, they helped me out immediately. Strongly recommend!",
-                   name: "Normunds Blumbergs",
-                   car: "Volvo XC90"
+                   text: "Paldies! Cadillac remontam uzgalis salūza, nomainīts profesionāli un ļoti ātri. Neviens serviss Siguldā to nevarēja vai negribēja pieņemt. Un viņi pieņēma un nomainīja uzgali dažu stundu laikā. Paldies! Vislabākās atsauksmes!",
+                   name: "Vidmantas",
+                   car: "Volkswagen Caddy"
                  },
                  {
-                   text: "Ļoti laipns un labsirdīgs cilvēks ar zelta rokām! Elastīgs darba laiks. Rūpīgs un atbildīgs darbs ar elektroniku.",
-                   name: "Terēze",
+                   text: "Ļoti labs autoserviss labi krāso un remontē automašīnas no 10/10 balles.",
+                   name: "Aigars",
                    car: "BMW 320"
                  }
                ].map((review, i) => (
@@ -387,20 +390,21 @@ export default function Home() {
                <h2 className="text-4xl font-black text-brand-dark mb-2 uppercase italic">Sazinies ar mums</h2>
                <p className="text-gray-600 mb-8">Vieta Jūsu atsauksmei vai jautājumam!</p>
                
-               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+               <form action="https://formspree.io/f/mzznwvon"
+  method="POST" className="space-y-6" >
                  <div className="space-y-2">
                    <Label className="font-bold uppercase text-xs tracking-wider text-gray-500">Vārds*</Label>
-                   <Input className="bg-white border-gray-200 h-12 focus:border-brand-accent transition-colors" />
+                   <Input name="Vārds" className="bg-white border-gray-200 h-12 focus:border-brand-accent transition-colors" />
                  </div>
                  <div className="space-y-2">
                    <Label className="font-bold uppercase text-xs tracking-wider text-gray-500">E-pasts</Label>
-                   <Input className="bg-white border-gray-200 h-12 focus:border-brand-accent transition-colors" />
+                   <Input name="Epasts" className="bg-white border-gray-200 h-12 focus:border-brand-accent transition-colors" />
                  </div>
                  <div className="space-y-2">
                    <Label className="font-bold uppercase text-xs tracking-wider text-gray-500">Vieta atsauksmei vai jautājumam*</Label>
-                   <Textarea className="bg-white border-gray-200 min-h-[150px] focus:border-brand-accent transition-colors" />
+                   <Textarea name="Ziņa" className="bg-white border-gray-200 min-h-[150px] focus:border-brand-accent transition-colors" />
                  </div>
-                 <Button className="w-full bg-brand-accent hover:bg-orange-600 text-white font-bold uppercase py-6 tracking-wider text-lg rounded-none skew-x-[-5deg]">
+                 <Button type = 'submit' className="w-full bg-brand-accent hover:bg-orange-600 text-white font-bold uppercase py-6 tracking-wider text-lg rounded-none skew-x-[-5deg]">
                    <span className="skew-x-[5deg]">Nosūtīt</span>
                  </Button>
                </form>
@@ -456,7 +460,7 @@ export default function Home() {
              <span className="font-bold uppercase tracking-wider">Auto Doktorāts © {new Date().getFullYear()}</span>
            </div>
            <div className="text-gray-500 text-sm">
-             Made by <span className="text-white font-bold">Replit Agent</span>
+             Made by <span className="text-white font-bold">Webly</span>
            </div>
         </div>
       </footer>
